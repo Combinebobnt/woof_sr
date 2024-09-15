@@ -1,3 +1,6 @@
+# Fork Note
+This fork was created for quick, dirty edits for coop speedrunning.
+
 # This is Woof!
 [![Woof! Icon](https://raw.githubusercontent.com/fabiangreffrath/woof/master/data/woof.png)](https://github.com/fabiangreffrath/woof)
 
