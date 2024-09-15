@@ -316,8 +316,14 @@ void P_DeathThink (player_t* player)
 
   if (player->cmd.buttons & BT_USE)
   {
-    if (demorecording || demoplayback || netgame)
-      player->playerstate = PST_REBORN;
+    if (demorecording || demoplayback)
+    {
+        // do not allow respawning during demo recording
+    }
+    else if(netgame)
+    {
+        player->playerstate = PST_REBORN;
+    }
     else switch(death_use_action)
     {
       case death_use_default:
